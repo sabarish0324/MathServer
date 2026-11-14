@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>KV</title>
+    </head>
+    <body>
+        <h1>Sabarish (26010660)</h1>
+        <h2>Calculating Churn Rate</h2>
+        <form method="POST">
+            {% csrf_token %}  
+           
+            <label>TOTAL CUSTOMER LOST:</label>
+            <input type="number" value="{{ TOTAL_CUSTOMER_LOST }}" name="total">
+            <br><br>
+            
+            <label>INITIAL CUSTOMER LOST:</label>
+            <input type="number" value="{{ INITIAL_CUSTOMERS }}" name="initial">
+         
+          
+            <br><br>
+            
+            <input type="submit" value="CALCULATE">
+            <br><br>
+            
+            <label>CHURN RATE TOTAL:</label>
+            <input type="number" value="{{ area }}"  >
+        </form>
+    </body>
+</html>
